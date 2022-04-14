@@ -122,7 +122,6 @@ Server and client can both customize options.
 
 
 On the client side
-`-lp` for listening port,default to 1080
 `-sa` is the option for server's address 
 `-sp` is the option for server's port, default to 8388
 `-c` for reuse connect key
@@ -137,7 +136,7 @@ python3 server.py -lp 8500 -c uRhcztzSfInXsiW1-KbNv9Otqwl-R5_9_gpdPmuP5L381spaBs
 client
 
 ```
-python3 client.py -sa 127.0.0.1 -sp 8500 -lp 1100 -c uRhcztzSfInXsiW1-KbNv9Otqwl-R5_9_gpdPmuP5L381spaBstxKBIOdeGxKusVYu6GT91AL7dvRi7VKWGASca7MJmLmIFYlw9IuGaomz0b7JRS0RExusSqwXm2M8IIiufIE-_tAVaEkgM3qSFDnAWvMh_Q95ZL6qxtZWxygy1KjebeHg1NpXj5rn81jjaVo1R3Xp5qkbMWJFuTPPL7oSfPWaRVc3q-OZ3H2xzUiPMZYOL1guCnDPHl-iAjFMB2yZpnsOig32jjRFNCzFE7AH2FBAsrGofDHVdQInRfTBBw2jh72fQHbgI0xdj_P_YsjPA6Yxe0kEUmZKK86WlOQQ==
+python3 client.py -sa 127.0.0.1 -sp 8500 -c uRhcztzSfInXsiW1-KbNv9Otqwl-R5_9_gpdPmuP5L381spaBstxKBIOdeGxKusVYu6GT91AL7dvRi7VKWGASca7MJmLmIFYlw9IuGaomz0b7JRS0RExusSqwXm2M8IIiufIE-_tAVaEkgM3qSFDnAWvMh_Q95ZL6qxtZWxygy1KjebeHg1NpXj5rn81jjaVo1R3Xp5qkbMWJFuTPPL7oSfPWaRVc3q-OZ3H2xzUiPMZYOL1guCnDPHl-iAjFMB2yZpnsOig32jjRFNCzFE7AH2FBAsrGofDHVdQInRfTBBw2jh72fQHbgI0xdj_P_YsjPA6Yxe0kEUmZKK86WlOQQ==
 ```
 
 
@@ -181,16 +180,12 @@ You can capture the trrafic on wireshark, because for this test case server and 
 python3 server.py -lp 8500 -c uRhcztzSfInXsiW1-KbNv9Otqwl-R5_9_gpdPmuP5L381spaBstxKBIOdeGxKusVYu6GT91AL7dvRi7VKWGASca7MJmLmIFYlw9IuGaomz0b7JRS0RExusSqwXm2M8IIiufIE-_tAVaEkgM3qSFDnAWvMh_Q95ZL6qxtZWxygy1KjebeHg1NpXj5rn81jjaVo1R3Xp5qkbMWJFuTPPL7oSfPWaRVc3q-OZ3H2xzUiPMZYOL1guCnDPHl-iAjFMB2yZpnsOig32jjRFNCzFE7AH2FBAsrGofDHVdQInRfTBBw2jh72fQHbgI0xdj_P_YsjPA6Yxe0kEUmZKK86WlOQQ==
 ```
 ```
-python3 client.py -sa 127.0.0.1 -sp 8500 -lp 1100 -c uRhcztzSfInXsiW1-KbNv9Otqwl-R5_9_gpdPmuP5L381spaBstxKBIOdeGxKusVYu6GT91AL7dvRi7VKWGASca7MJmLmIFYlw9IuGaomz0b7JRS0RExusSqwXm2M8IIiufIE-_tAVaEkgM3qSFDnAWvMh_Q95ZL6qxtZWxygy1KjebeHg1NpXj5rn81jjaVo1R3Xp5qkbMWJFuTPPL7oSfPWaRVc3q-OZ3H2xzUiPMZYOL1guCnDPHl-iAjFMB2yZpnsOig32jjRFNCzFE7AH2FBAsrGofDHVdQInRfTBBw2jh72fQHbgI0xdj_P_YsjPA6Yxe0kEUmZKK86WlOQQ==
+python3 client.py -sa 127.0.0.1 -sp 8500 -c uRhcztzSfInXsiW1-KbNv9Otqwl-R5_9_gpdPmuP5L381spaBstxKBIOdeGxKusVYu6GT91AL7dvRi7VKWGASca7MJmLmIFYlw9IuGaomz0b7JRS0RExusSqwXm2M8IIiufIE-_tAVaEkgM3qSFDnAWvMh_Q95ZL6qxtZWxygy1KjebeHg1NpXj5rn81jjaVo1R3Xp5qkbMWJFuTPPL7oSfPWaRVc3q-OZ3H2xzUiPMZYOL1guCnDPHl-iAjFMB2yZpnsOig32jjRFNCzFE7AH2FBAsrGofDHVdQInRfTBBw2jh72fQHbgI0xdj_P_YsjPA6Yxe0kEUmZKK86WlOQQ==
 ```
 
 <img width="600" src="https://user-images.githubusercontent.com/32621871/163300297-23ad4346-7a8b-4155-a8b5-5f7dfb9d6ccb.png">
 
-#### 🔸 b. Change port on the proxy plugin to 1100
-
-<img width="300" src="https://user-images.githubusercontent.com/32621871/163300369-fa74c772-d7f6-46fd-9892-7bc3c76d4ab6.png">
-
-#### 🔸 c. Check if the browser can successfully connected to a website
+#### 🔸 b. Check if the browser can successfully connected to a website
 
 <img width="500" src="https://user-images.githubusercontent.com/32621871/163300469-2f16aaa0-8024-4ca3-887c-c637945e51cc.png">
 
